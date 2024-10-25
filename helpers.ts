@@ -33,7 +33,7 @@ export function comparar(arreglo: number[], i: number, j: number): number {
     let comparacion: number;
     if (arreglo[i] === arreglo[j]) {
         comparacion = 0;
-    } else if (arreglo[i] < arreglo[j]) {
+    } else if (arreglo[i] > arreglo[j]) { //Cambio el operador `<` por `>` para que ordene de forma descendente.
         comparacion = -1;
     } else {
         comparacion = 1;
